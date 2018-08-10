@@ -1,0 +1,11 @@
+body{background-color:rgb(41, 55, 248) }
+#hi{color:white;padding-left:200px;padding-top:100px;}
+.hey,#hello,img{padding-left: 0px}
+.o{width: 300px;height: 500px; display: inline-block;background-color:skyblue;padding-left: 10px; }
+.po{width: 800px;height: 500px; display: inline-block;background-color:whitesmoke;  padding-left: 10px}
+.o,.po{float: left;margin-left: 0px;}
+.o,.po{
+    position: relative;
+    left: 12em;
+}
+#b{width: 400px;height:7em }
