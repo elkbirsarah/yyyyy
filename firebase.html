@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Firebase</title>
+        <link rel="stylesheet" href="css/ff.css">
+</head>
+<body> 
+        <div class="contact-title">
+                <h1>say hello</h1>
+                <h2>we are always ready to serve you!</h2>
+        </div>
+        <div class="contact-Form"></div>
+        <form id="contact-Form" method="POST" action="">
+        <input name="name" type="text" class="form-control" placeholder="your name" id="name" required><br>
+        <input name="email" type="email" class="form-control" placeholder="your email" id="email" required><br>
+        <textarea name="message" class="form-control" placeholder="message" rows="4" required></textarea><br>
+        <button type="text" id="submitform" required onclick="submitForm()">send message</button><br>
+        </form>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+</body>
+<script src="js/contact.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>word</title>
+
+</head>
+<body>
+        
+        <button type="button" id="gfg">bold paragraph </button>
+        <button type="button" id="ab">italic paragraph </button>
+        <button type="button" id="cd">underlined paragraph </button>
+        <select id="s" onclick="font()">
+                        <option>text font</option>
+                <option>Arial</option>
+                <option>Helvetica</option>
+                <option>serif</option>
+                <option>sans-serif</option>
+        </select>
+        <select id="n" onclick="zoo()">
+                        <option>font size</option>
+                        <option>20px</option>
+                        <option>30px</option>
+                        <option>50px</option>
+                </select>
+<p id="b">We're going to make a program that looks like Microsoft Word.
+
+There will be one paragrah and a bunch of buttons.
+                                
+Each button will have an onclick attribute that will link to a different javascript function</p>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script >
+$("#gfg").click(function(){
+    $("#b").css("font-weight","900")
+})
+$("#ab").click(function(){$("#b").css("font-style","italic");});
+$("#cd").click(function(){$("#b").css("text-decoration","underline");});
+
+$("#s").change(function() {
+    //alert($(this).val());
+    $('#b').css("font-family", $(this).val());
+
+});
+
+$("#n").change(function() {
+    $('#b').css("font-size", $(this).val());
+});
+
+</script>
+</body>
+</html>
